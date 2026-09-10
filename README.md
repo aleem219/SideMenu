@@ -1,4 +1,4 @@
-## UIKit Side Menu — UITableView
+## UIKit Side Menu
 
 A lightweight **side menu implementation in Swift using UIKit and UITableView**, built entirely with native iOS components.
 
