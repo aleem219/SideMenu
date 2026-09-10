@@ -18,7 +18,6 @@ class ViewController: UIViewController {
     private var isMenuOpen = false
     let myArray = ["row 1", "row 2", "row 3"]
     
-    
     // MARK: - Lifecycle methods
     override func viewDidLoad() {
         super.viewDidLoad()
