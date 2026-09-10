@@ -22,7 +22,7 @@
                                 <items>
                                     <barButtonItem id="sIo-D5-K4Y">
                                         <imageReference key="image" image="line.3.horizontal.decrease" catalog="system" symbolScale="default"/>
-                                        <color key="tintColor" red="0.0" green="0.50196078430000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="tintColor" red="0.16862745100000001" green="0.2274509804" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <action selector="btnSidelMenu:" destination="BYZ-38-t0r" id="Kgt-I1-rjM"/>
                                         </connections>
