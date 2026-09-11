@@ -56,6 +56,7 @@ extension ViewController : UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         cell.textLabel?.text = myArray[indexPath.row]
+        cell.textLabel?.textColor = #colorLiteral(red: 0.2207712233, green: 0.295751214, blue: 0.4040987492, alpha: 1)
         cell.selectionStyle = .none
         return cell
     }
