@@ -34,8 +34,8 @@ class ViewController: UIViewController {
 // MARK: - Extension for ViewController
 extension ViewController  {
     func setupTbalViewDelegates() {
-        tableView.dataSource = self
         tableView.delegate = self
+        tableView.dataSource = self
     }
     
     func setupTableViewCell() {
