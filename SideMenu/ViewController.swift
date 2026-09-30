@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     
     // MARK: - Variables
     private var isMenuOpen = false
-    let myArray = ["row 1", "row 2", "row 3"]
+    let myArray = ["Dashboard", "Notifications", "Projects","Tasks","Analytics","Settings","Log Out"]
     
     // MARK: - Lifecycle methods
     override func viewDidLoad() {
@@ -40,6 +40,7 @@ extension ViewController  {
     
     func setupTableViewCell() {
        self.tableView.register(UINib(nibName: "UserProfileTVC", bundle: nil), forCellReuseIdentifier: "UserProfileTVC")
+       self.tableView.register(UINib(nibName: "UserSettingTVC", bundle: nil), forCellReuseIdentifier: "UserSettingTVC")
     }
     
     func handleSideMenuToggle() {
@@ -67,9 +68,8 @@ extension ViewController : UITableViewDataSource, UITableViewDelegate {
             let cell = tableView.dequeueReusableCell(withIdentifier: "UserProfileTVC",  for: indexPath) as! UserProfileTVC
             return cell
         } else {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-            cell.textLabel?.text = myArray[indexPath.row]
-            cell.textLabel?.textColor = #colorLiteral(red: 0.2207712233, green: 0.295751214, blue: 0.4040987492, alpha: 1)
+            let cell = tableView.dequeueReusableCell(withIdentifier: "UserSettingTVC", for: indexPath) as! UserSettingTVC
+            cell.lblSetting.text = myArray[indexPath.row]
             cell.selectionStyle = .none
             return cell
         }
