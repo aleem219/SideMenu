@@ -39,8 +39,8 @@ extension ViewController  {
     }
     
     func setupTableViewCell() {
-       self.tableView.register(UINib(nibName: "UserProfileTVC", bundle: nil), forCellReuseIdentifier: "UserProfileTVC")
-       self.tableView.register(UINib(nibName: "UserSettingTVC", bundle: nil), forCellReuseIdentifier: "UserSettingTVC")
+        self.tableView.register(UINib(nibName: "UserProfileTVC", bundle: nil), forCellReuseIdentifier: "UserProfileTVC")
+        self.tableView.register(UINib(nibName: "UserSettingTVC", bundle: nil), forCellReuseIdentifier: "UserSettingTVC")
     }
     
     func handleSideMenuToggle() {
@@ -81,7 +81,9 @@ extension ViewController : UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("selected index is: \(indexPath.row)")
+        if indexPath.section != 0 {
+            print("selected row is: \(myArray[indexPath.row])")
+        }
     }
 }
 
