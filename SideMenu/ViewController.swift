@@ -21,8 +21,8 @@ class ViewController: UIViewController {
     // MARK: - Lifecycle methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupTbalViewDelegates()
         setupTableViewCell()
+        setupTbalViewDelegates()
     }
     
     // MARK: - Button's Action
