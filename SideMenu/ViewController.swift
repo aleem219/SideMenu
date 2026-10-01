@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     
     // MARK: - Variables
     private var isMenuOpen = false
-    let myArray = ["Dashboard", "Notifications", "Projects", "Tasks", "Analytics", "Settings", "Log Out"]
+    let myArray = ["Dashboard", "Notifications", "Projects", "Tasks", "Settings", "Log Out"]
     
     // MARK: - Lifecycle methods
     override func viewDidLoad() {
